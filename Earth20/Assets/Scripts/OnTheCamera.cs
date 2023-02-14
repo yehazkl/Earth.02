@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OnTheCamera : MonoBehaviour
 {
+    int clipSize;
     Animator anime;
    public ParticleSystem PS;
     public AudioSource audiosource;
