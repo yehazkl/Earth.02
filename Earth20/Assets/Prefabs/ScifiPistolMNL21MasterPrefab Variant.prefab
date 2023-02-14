@@ -12,16 +12,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4828438662016493068, guid: f93bad5d36639e24eacfa1803d264640, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828438662016493068, guid: f93bad5d36639e24eacfa1803d264640, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.057
+      value: 0.9654667
       objectReference: {fileID: 0}
     - target: {fileID: 4828438662016493068, guid: f93bad5d36639e24eacfa1803d264640, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.533
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4828438662016493068, guid: f93bad5d36639e24eacfa1803d264640, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.4478
+      value: 0.92957777
       objectReference: {fileID: 0}
     - target: {fileID: 4828438662016493068, guid: f93bad5d36639e24eacfa1803d264640, type: 3}
       propertyPath: m_LocalRotation.w
@@ -53,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4828438662016493071, guid: f93bad5d36639e24eacfa1803d264640, type: 3}
       propertyPath: m_Name
-      value: ScifiPistolMNL21MasterPrefab
+      value: ScifiPistolMNL21MasterPrefab Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4828438662016493071, guid: f93bad5d36639e24eacfa1803d264640, type: 3}
       propertyPath: m_IsActive

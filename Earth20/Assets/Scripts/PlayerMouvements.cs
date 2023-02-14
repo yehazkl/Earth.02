@@ -30,14 +30,13 @@ public class PlayerMouvements : MonoBehaviour
     int multiJumps;
 
     // Weapon
-    public GameObject Pistol;
     Vector3 StartPoint;
 
     // Start is called before the first frame update
     void Start()
     {
-        StartPoint = gameObject.transform.position;
-
+       
+     
         //player rotation
         lookSpeed = 90;
         cameraX = 0;
@@ -63,7 +62,7 @@ public class PlayerMouvements : MonoBehaviour
         PlayerMove();
         Gravity();
         Crouch();
-
+       
     }
 
     void Gravity()
@@ -127,11 +126,12 @@ public class PlayerMouvements : MonoBehaviour
             animecontrol.SetBool("WalkPlayer", false);
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        /*if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            animecontrol.SetTrigger("PistolPlayer");
-            Instantiate(Pistol, StartPoint, Pistol.transform.rotation);
-        }
+            animecontrol.SetTrigger("Magazine");
+           
+        }*/
+       
 
     }
     void PlayerRotation()
