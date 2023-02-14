@@ -5,7 +5,9 @@ using UnityEngine;
 public class OnTheCamera : MonoBehaviour
 {
     Animator anime;
-   
+   public ParticleSystem PS;
+    public AudioSource audiosource;
+    public AudioClip FireM4;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,8 @@ public class OnTheCamera : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             anime.SetBool("Fire", true);
+            PS.Play();
+         
             
         }
         else

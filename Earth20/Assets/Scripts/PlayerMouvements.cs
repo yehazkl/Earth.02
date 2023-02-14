@@ -86,7 +86,7 @@ public class PlayerMouvements : MonoBehaviour
         }
         if (Input.GetButtonDown("Jump") && multiJumps > 0)
         {
-            velocity.y += 7;
+            velocity.y += 6;
             multiJumps--;
         }
         cc.Move(velocity * Time.deltaTime);
@@ -126,11 +126,6 @@ public class PlayerMouvements : MonoBehaviour
             animecontrol.SetBool("WalkPlayer", false);
         }
 
-        /*if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            animecontrol.SetTrigger("Magazine");
-           
-        }*/
        
 
     }
@@ -139,7 +134,6 @@ public class PlayerMouvements : MonoBehaviour
         mouseX = Input.GetAxis("Mouse X") * lookSpeed * Time.deltaTime;
         transform.Rotate(0, mouseX, 0);
         mouseY = Input.GetAxis("Mouse Y") * lookSpeed * Time.deltaTime;
-        // cameraTurn.Rotate(mouseY, 0, 0);
         cameraX -= mouseY;
         cameraX = MyClamp(cameraX, -90, 42.5f);
         cameraTurn.localRotation = Quaternion.Euler(cameraX, 0, 0);
